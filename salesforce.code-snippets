@@ -1,0 +1,223 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	"Package Creator": {
+		"scope": "xml",
+		"prefix": "package",
+		"body":[
+			"<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+			"<Package xmlns=\"http://soap.sforce.com/2006/04/metadata\">",
+			"\t${1: }",
+			"\t<version>${2:45.0}</version>",
+			"</Package>"
+		],
+		"description": "Create package.xml for ant deployment"
+	},
+
+	"Package-Object Creator": {
+		"scope": "xml",
+		"prefix": "package-object",
+		"body":[
+			"<types>",
+        	"\t<members>${1:ObjectApiName}</members>",
+        	"\t<name>CustomObject</name>",
+    		"</types>"
+		],
+		"description": "Add CustomObject in package.xml"
+	},
+
+	"Package-Class Creator": {
+		"scope": "xml",
+		"prefix": "package-class",
+		"body":[
+			"<types>",
+        	"\t<members>${1:ApexClassApiName}</members>",
+        	"\t<name>ApexClass</name>",
+    		"</types>"
+		],
+		"description": "Add ApexClass in package.xml"
+	},
+
+	"Package-Field Creator": {
+		"scope": "xml",
+		"prefix": "package-field",
+		"body":[
+			"<types>",
+        	"\t<members>${1:FieldApiName}</members>",
+        	"\t<name>CustomField</name>",
+    		"</types>"
+		],
+		"description": "Add CustomField in package.xml"
+	},
+
+	"Package-ListView Creator": {
+		"scope": "xml",
+		"prefix": "package-listview",
+		"body":[
+			"<types>",
+        	"\t<members>${1:ListViewApiName}</members>",
+        	"\t<name>ListView</name>",
+    		"</types>"
+		],
+		"description": "Add ListView in package.xml"
+	},
+
+	"Package-SharingCriteriaRule Creator": {
+		"scope": "xml",
+		"prefix": "package-sharing-criteria",
+		"body":[
+			"<types>",
+        	"\t<members>${1:SharingRuleApiName}</members>",
+        	"\t<name>SharingCriteriaRule</name>",
+    		"</types>"
+		],
+		"description": "Add SharingCriteriaRule in package.xml"
+	},
+
+	"Package-SharingOwnerRule Creator": {
+		"scope": "xml",
+		"prefix": "package-sharing-owner",
+		"body":[
+			"<types>",
+        	"\t<members>${1:SharingRuleApiName}</members>",
+        	"\t<name>SharingOwnerRule</name>",
+    		"</types>"
+		],
+		"description": "Add SharingOwnerRule in package.xml"
+	},
+
+	"Package-Profile Creator": {
+		"scope": "xml",
+		"prefix": "package-profile",
+		"body":[
+			"<types>",
+        	"\t<members>${1:ProfileApiName}</members>",
+        	"\t<name>Profile</name>",
+    		"</types>"
+		],
+		"description": "Add Profile in package.xml"
+	},
+
+	"Package-Aura Bundle Creator": {
+		"scope": "xml",
+		"prefix": "package-aura-bundle",
+		"body":[
+			"<types>",
+        	"\t<members>${1:AuraBundleApiName}</members>",
+        	"\t<name>AuraDefinitionBundle</name>",
+    		"</types>"
+		],
+		"description": "Add AuraDefinitionBundle in package.xml"
+	},
+
+	"Package-PermissionSet Creator": {
+		"scope": "xml",
+		"prefix": "package-permission-set",
+		"body":[
+			"<types>",
+        	"\t<members>${1:PermissionSetApiName}</members>",
+        	"\t<name>PermissionSet</name>",
+    		"</types>"
+		],
+		"description": "Add PermissionSet in package.xml"
+	},
+
+	"Package-CustomTab Creator": {
+		"scope": "xml",
+		"prefix": "package-tab",
+		"body":[
+			"<types>",
+        	"\t<members>${1:CustomTabApiName}</members>",
+        	"\t<name>CustomTab</name>",
+    		"</types>"
+		],
+		"description": "Add CustomTab in package.xml"
+	},
+
+	"Package-CustomApplication Creator": {
+		"scope": "xml",
+		"prefix": "package-application",
+		"body":[
+			"<types>",
+        	"\t<members>${1:CustomApplicationApiName}</members>",
+        	"\t<name>CustomApplication</name>",
+    		"</types>"
+		],
+		"description": "Add CustomApplication in package.xml"
+	},
+
+	"Package-RecordType Creator": {
+		"scope": "xml",
+		"prefix": "package-record-type",
+		"body":[
+			"<types>",
+        	"\t<members>${1:RecordTypeApiName}</members>",
+        	"\t<name>RecordType</name>",
+    		"</types>"
+		],
+		"description": "Add RecordType in package.xml"
+	},
+
+	"Package-Visualforce Creator": {
+		"scope": "xml",
+		"prefix": "package-page",
+		"body":[
+			"<types>",
+        	"\t<members>${1:VisualforceApiName}</members>",
+        	"\t<name>ApexPage</name>",
+    		"</types>"
+		],
+		"description": "Add ApexPage in package.xml"
+	},
+
+	"Aura-Attribute Creator": {
+		"scope": "html,component",
+		"prefix": "aura-attribute",
+		"body":[
+			"<aura:attribute name=\"${1:attributeName}\" type=\"${2:attributeType}\" />",
+		],
+		"description": "Add Aura:Attribute in Aura Bundle"
+	},
+
+	"Aura-Tabset-Horizontal Creator": {
+		"scope": "html,component",
+		"prefix": "aura-tabset",
+		"body":[
+			"<lightning:tabset>",
+			"\t<lightning:tab label=\"${1:tabLabel}\">",
+			"\t\t${2:<!-- Awesome content here-->}",
+			"\t</lightning:tab>",
+			"</lightning:tabset>",
+		],
+		"description": "Add Aura:Attribute in Aura Bundle"
+	},
+
+	"Aura-Tabset-Vertical Creator": {
+		"scope": "html,component",
+		"prefix": "aura-tabset-vertical",
+		"body":[
+			"<lightning:tabset variant=\"vertical\">",
+			"\t<lightning:tab label=\"${1:tabLabel}\">",
+			"\t\t${2:<!-- Awesome content here-->}",
+			"\t</lightning:tab>",
+			"</lightning:tabset>",
+		],
+		"description": "Add Aura:Attribute in Aura Bundle"
+	},
+	
+}
