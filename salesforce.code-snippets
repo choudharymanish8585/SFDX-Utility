@@ -216,7 +216,7 @@
 			"\t<!-- Tab Body Goes Here-->",
 			"</lightning:tab>",
 		],
-		"description": "Add lightning:tab in Aura Bundle"
+		"description": "Add lightning:tab in Aura Bundle" 
 	},
 
 	"Aura-Card Creator": {
